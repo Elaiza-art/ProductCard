@@ -1,0 +1,278 @@
+@font-face{
+    font-family: Inter;
+    src: url(../fonts/Inter/InterRegular/InterRegular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    font-weight: bold;
+    src: url(../fonts/Inter/InterSemiBold/InterSemiBold.ttf);
+}
+
+
+
+@font-face{
+    font-family: Libre Baskerville;
+    src: url(../fonts/libre-baskerville/LibreBaskerville-Regular.ttf);
+}
+
+
+body{
+    background-color: rgb(144, 151, 151);
+    padding: 220px;
+}
+
+.product-card{
+    width: 440px;
+    font-family: Inter, sans-serif;
+    color: #302A25;
+}
+
+.card-top{
+    height: 400px;
+    display: flex;
+    position: relative;
+}
+
+.card-top__image{
+   position: absolute; 
+   z-index: -1;
+   border-radius: 4% 4% 0% 0%;
+}
+
+.product-card__form{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: absolute;
+    left: 24px;
+    top: 28px;
+}
+
+.product-card__favourites{
+
+    background-color: #FCFAF6;
+    background-image: url(../picture/heart.png) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.product-card__collection-badge:hover{
+    background-color: #b9794f;
+    color: #FCFAF6;
+    transition: 2s;
+    
+}
+
+.product-card__collection-badge{
+    background-color: #FCFAF6;
+    height: 26px;
+    width: 137px;
+    font-size: 10px;
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+.product-card__content{
+    height: 385px;
+    background-color: #FCFAF6;
+    border-radius: 0% 0% 4% 4%;
+    padding: 30px;
+}
+
+.product-card__header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.product-card__category{
+
+    font-size: 11px;
+    color: #7B7268;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+}
+
+.rating::before{
+    content: url(../picture/star.png);
+    width: 12px;
+    height: 12px;
+}
+
+.product-card__info-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+.product-card__name{
+    font-family: Libre Baskerville;
+    font-size: 29px;
+}
+
+.product-card__price{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.regular-text{
+    font-size: 14px;
+    color: #7B7268;
+    line-height: 160%;
+}
+
+.product-property{
+    padding-top: 20px; 
+    font-size: 12px;
+
+}
+
+.product-property__color{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #e0dbd5;
+}
+
+.product-property__label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product-property__title{
+    color: #7B7268;
+}
+
+.product-property__value{
+    font-weight:600;
+}
+
+.product-property__swatches {
+    display: flex;
+    gap: 8px;
+}
+
+.swatch {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.swatch--active {
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1.5px #A87B63;
+    background-color: #A87B63
+}
+
+.swatch:hover {
+    opacity: 0.8;
+}
+
+.product-property__capacity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0px; 
+    border-bottom: 1px solid #e0dbd5;
+    color: #7B7268;
+
+}
+
+.product-property__description{
+    display: inline-block;
+    font-size: 12px;
+    
+}
+
+.product-property__point{
+    font-size: 10px;
+}
+
+.add-to-bag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 52px;
+    background-color: #855B46;
+    color: #fff;
+    border-radius: 8px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    gap: 12px;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+.add-to-bag:hover {
+    background-color: #a8775b;
+}
+
+.add-to-bag__icon{
+    position: absolute;
+    background-image: url(../picture/bag.png);
+    background-repeat: no-repeat;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    left: 20px;
+}
+
+.add-to-bag__arrow {
+    display: inline-block;
+    position: absolute;
+    background-image: url(../picture/arrow.png);
+    color: #fff;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    right: 17px;
+    bottom: 17px;
+
+}
+
+.product-card__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    font-size: 11px;
+    color: #7B7268;
+}
+
+.product-card__point {
+    width: 6px;
+    height: 6px;
+    background-color: #855B46 ;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.product-card__text {
+    font-family: Inter, sans-serif;
+}
+
+
